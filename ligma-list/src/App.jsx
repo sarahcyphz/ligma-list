@@ -1,11 +1,18 @@
-import "./App.css";
 import NavBar from "./components/Navigation/navbar";
+import SpicesPage from "./pages/Spices/spicePage";
+import NeedPage from "./pages/Need/needPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <h1>Ligma List</h1>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="spices" element={<SpicesPage />} />
+          <Route path="need" element={<NeedPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
