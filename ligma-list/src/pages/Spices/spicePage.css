@@ -3,6 +3,13 @@ h1{
     color: #FA9D00;
 }
 
+h2{
+    text-align: center;
+    color: #FA9D00;
+    font-size: 4vw;
+    flex-grow: 3;
+}
+
 hr{
     width: 70%;
     margin: auto;
@@ -10,10 +17,36 @@ hr{
     border-color: #FA9D00;
 }
 
-.spice-container{
+.spices-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 }
+
+.spice-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    margin-bottom: 4vw;
+    border: 2px solid #FA9D00;
+    border-radius: 13px;
+}
+
+.check-container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+
+}
+
+.spice-card img{
+    width: 5vw;
+    height: 5vw;
+    flex-grow: 1;
+}
+
+
