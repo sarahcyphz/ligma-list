@@ -1,4 +1,5 @@
 import "./spicePage.css";
+import trash from "../../assets/trash.svg";
 
 const SpicesPage = () => {
   return (
@@ -7,12 +8,27 @@ const SpicesPage = () => {
         <h1>Spice Inventory</h1>
         <hr />
       </div>
-      <div className="spice-container">
-        <div className="spice-card">
-          <h2>Spice Name</h2>
+      <div className="spices-container">
+        <div className="spice-card-need">
+          <label className="check-container">
+            <input type="checkbox" id="need" name="need" value="need" />
+          </label>
+          <h2 className="spice-name-need">Spice Name</h2>
+          <img src={trash} alt="trash" />
         </div>
         <div className="spice-card">
-          <h2>Spice Name</h2>
+          <label className="check-container">
+            <input type="checkbox" id="need" name="need" value="need" />
+          </label>
+          <h2 className="spice-name">Spice Name</h2>
+          <img src={trash} alt="trash" />
+        </div>
+        <div className="spice-card">
+          <label className="check-container">
+            <input type="checkbox" id="need2" name="need2" value="need2" />
+          </label>
+          <h2 className="spice-name">Italian Seasoning</h2>
+          <img src={trash} alt="trash" />
         </div>
       </div>
     </>

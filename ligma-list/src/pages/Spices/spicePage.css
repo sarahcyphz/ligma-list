@@ -3,9 +3,16 @@ h1{
     color: #FA9D00;
 }
 
-h2{
+.spice-name{
     text-align: center;
     color: #FA9D00;
+    font-size: 4vw;
+    flex-grow: 3;
+}
+
+.spice-name-need{
+    text-align: center;
+    color: #6E2A11;
     font-size: 4vw;
     flex-grow: 3;
 }
@@ -44,6 +51,22 @@ hr{
 }
 
 .spice-card img{
+    width: 5vw;
+    height: 5vw;
+    flex-grow: 1;
+}
+
+.spice-card-need{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    margin-bottom: 4vw;
+    border: 2px solid #6E2A11;
+    border-radius: 13px;
+}
+
+.spice-card-need img{
     width: 5vw;
     height: 5vw;
     flex-grow: 1;
