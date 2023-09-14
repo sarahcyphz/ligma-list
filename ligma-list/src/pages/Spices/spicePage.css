@@ -24,6 +24,35 @@ hr{
     border-color: #FA9D00;
 }
 
+.search-add-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-add-container input{
+    width: 43%;
+    height: 5vw;
+    border: 2px solid #19B092;
+    border-radius: 13px;
+    padding-left: 10px;
+    font-size: 3vw;
+}   
+
+.add-button{
+    width: 20%;
+    height: 5vw;
+    border: 2px solid #19B092;
+    border-radius: 13px;
+    background-color: #19B092;
+    color: white;
+    font-size: 3vw;
+    margin-left: 3vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .spices-container{
     display: flex;
     flex-direction: column;

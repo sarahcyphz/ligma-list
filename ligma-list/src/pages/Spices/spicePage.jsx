@@ -8,6 +8,10 @@ const SpicesPage = () => {
         <h1>Spice Inventory</h1>
         <hr />
       </div>
+      <div className="search-add-container">
+        <input type="text" className="search" placeholder="Search.."></input>
+        <button className="add-button">Add Spice</button>
+      </div>
       <div className="spices-container">
         <div className="spice-card-need">
           <label className="check-container">
