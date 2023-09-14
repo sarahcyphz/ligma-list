@@ -3,6 +3,20 @@ h1{
     color: #FA9D00;
 }
 
+.spice-name{
+    text-align: center;
+    color: #FA9D00;
+    font-size: 4vw;
+    flex-grow: 3;
+}
+
+.spice-name-need{
+    text-align: center;
+    color: #6E2A11;
+    font-size: 4vw;
+    flex-grow: 3;
+}
+
 hr{
     width: 70%;
     margin: auto;
@@ -10,10 +24,80 @@ hr{
     border-color: #FA9D00;
 }
 
-.spice-container{
+.search-add-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-add-container input{
+    width: 43%;
+    height: 5vw;
+    border: 2px solid #19B092;
+    border-radius: 13px;
+    padding-left: 10px;
+    font-size: 3vw;
+}   
+
+.add-button{
+    width: 20%;
+    height: 5vw;
+    border: 2px solid #19B092;
+    border-radius: 13px;
+    background-color: #19B092;
+    color: white;
+    font-size: 3vw;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.spices-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 }
+
+.spice-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    margin-bottom: 4vw;
+    border: 2px solid #FA9D00;
+    border-radius: 13px;
+}
+
+.check-container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+
+}
+
+.spice-card img{
+    width: 5vw;
+    height: 5vw;
+    flex-grow: 1;
+}
+
+.spice-card-need{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    margin-bottom: 4vw;
+    border: 2px solid #6E2A11;
+    border-radius: 13px;
+}
+
+.spice-card-need img{
+    width: 5vw;
+    height: 5vw;
+    flex-grow: 1;
+}
+
+
