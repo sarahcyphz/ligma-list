@@ -1,7 +1,9 @@
 import "./spicePage.css";
 import trash from "../../assets/trash.svg";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
+import AddSpice from "./addSpice";
 
 type Spice = {
   name: string,
@@ -33,7 +35,9 @@ const SpicesPage = () => {
       </div>
       <div className="search-add-container">
         <input type="text" className="search" placeholder="Search.." />
-        <button className="add-button">Add Spice</button>
+        <Link to="/addspice" className="add-button">
+          Add Spice
+        </Link>
       </div>
       <div className="spices-container">
         {spices.map((spice, index) => (
