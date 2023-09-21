@@ -15,7 +15,7 @@ const SpicesPage = () => {
   );
 
   useEffect(() => {
-    axios.get<Spice[]>("https://localhost:5086/catalog",
+    axios.get<Spice[]>('http://localhost:5086/catalog',
     {
       headers: {
         "Content-Type": "application/json",
