@@ -40,7 +40,9 @@ hr{
     font-size: 3vw;
 }   
 
-.add-button{
+.add-button {
+    text-decoration: none;
+    font-family: inherit;
     width: 20%;
     height: 5vw;
     border: 2px solid #19B092;
@@ -50,7 +52,11 @@ hr{
     font-size: 3vw;
     margin-left: 3vw;
     cursor: pointer;
-}
+    display: inline-block; /* Ensure it behaves like an inline element */
+    text-align: center; /* Align the text in the center */
+    line-height: 5vw; /* Vertically center the text */
+  }
+  
 
 .spices-container{
     display: flex;
