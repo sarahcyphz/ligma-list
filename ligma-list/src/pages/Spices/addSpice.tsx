@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import React from "react";
+import "./addSpice.css";
 
 export const AddSpice = (): JSX.Element => {
   const navigate = useNavigate();
@@ -36,16 +37,16 @@ export const AddSpice = (): JSX.Element => {
       <h1>Add Spice</h1>
       <hr />
       <div className="add-spice-container">
-        <label htmlFor="spice-name">Name</label>
         <input
           type="text"
           id="spice-name"
           name="spice-name"
+          placeholder="Spice Name"
           onChange={(e) => setSpiceName(e.target.value)}
         />
         <div className="add-spice-buttons">
-          <button onClick={handleSubmit}>Add</button>
-          <button onClick={cancelAdd}>Cancel</button>
+          <button onClick={handleSubmit} className="submit">Submit</button>
+          <button onClick={cancelAdd} className="cancel">Cancel</button>
         </div>
       </div>
     </div>
