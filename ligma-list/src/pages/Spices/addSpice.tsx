@@ -10,6 +10,7 @@ export const AddSpice = (): JSX.Element => {
 
   type SpiceRequest = {
     name: string;
+    isNeeded: number;
   };
 
   const cancelAdd = () => {
@@ -26,6 +27,7 @@ export const AddSpice = (): JSX.Element => {
   const handleSubmit = () => {
     const newSpice: SpiceRequest = {
       name: spiceName,
+      isNeeded: 0,
     };
 
     PostSpice({ newSpice });

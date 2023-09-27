@@ -52,9 +52,9 @@ hr{
     font-size: 3vw;
     margin-left: 3vw;
     cursor: pointer;
-    display: inline-block; /* Ensure it behaves like an inline element */
-    text-align: center; /* Align the text in the center */
-    line-height: 5vw; /* Vertically center the text */
+    display: inline-block; 
+    text-align: center; 
+    line-height: 5vw; 
   }
   
 
@@ -74,14 +74,6 @@ hr{
     margin-bottom: 4vw;
     border: 2px solid #FA9D00;
     border-radius: 13px;
-}
-
-.check-container{
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content:right;
-
 }
 
 .spice-card img{

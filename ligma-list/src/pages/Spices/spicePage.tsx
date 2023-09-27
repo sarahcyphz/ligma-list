@@ -1,12 +1,12 @@
 import "./spicePage.css";
-import trash from "../../assets/trash.svg";
+import trash from "/trash.svg";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import AddSpice from "./addSpice";
 
 type Spice = {
-  name: string,
+  name: string;
 };
 
 const emptySpices: Spice[] = [];
@@ -41,18 +41,12 @@ const SpicesPage = () => {
       </div>
       <div className="spices-container">
         {spices.map((spice, index) => (
-          <div className="spice-card" key={index}>
-            <label className="check-container">
-              <input
-                type="checkbox"
-                id={`spice-${index}`}
-                name={spice.name}
-                value={spice.name}
-              />
-            </label>
+          <button className="spice-card" id={'spice-${index}'} name={spice.name} value={spice.name}>
+          <div key={index}>
             <h2 className="spice-name">{spice.name}</h2>
             <img src={trash} alt="trash" />
           </div>
+          </button>
         ))}
       </div>
     </>
