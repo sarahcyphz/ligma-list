@@ -42,7 +42,7 @@ const SpicesPage = () => {
       <div className="spices-container">
         {spices.map((spice, index) => (
           <button className="spice-card" id={'spice-${index}'} name={spice.name} value={spice.name}>
-          <div key={index}>
+          <div className="spice-button" key={index}>
             <h2 className="spice-name">{spice.name}</h2>
             <img src={trash} alt="trash" />
           </div>

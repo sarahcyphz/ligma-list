@@ -76,6 +76,12 @@ hr{
     border-radius: 13px;
 }
 
+.spice-button{
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+}
+
 .spice-card img{
     width: 5vw;
     height: 5vw;
